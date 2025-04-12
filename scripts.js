@@ -14,7 +14,7 @@ const supabaseClient = supabase.createClient(
       e.preventDefault();
   
       const name = nameInput.value.trim();
-      const message = reviewInput.value.trim();
+      const message = document.getElementById('message').value.trim();
   
       if (!name || !message) {
         alert('Please fill out both fields.');
