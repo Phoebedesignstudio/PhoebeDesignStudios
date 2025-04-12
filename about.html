@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Phoebe Design Studios - About</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="logo2.png" type="image/png" />
+<link href="https://fonts.googleapis.com/css2?family=Alike&family=Montserrat&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.0.0/dist/umd/supabase.js"></script>
+</head>
+<body>
+<!-- Header -->
+<header>
+<div class="header-top">
+<img src="logo.png" alt="Logo" class="logo" />
+<h1 class="business-name">Phoebe Design Studios</h1>
+</div>
+<nav class="navigation">
+<ul>
+<li><a href="index.html#home" class="nav-link">Home</a></li>
+<li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+<li><a href="about.html" class="nav-link">About</a></li>
+<li><a href="index.html#services" class="nav-link">Services</a></li>
+<li><a href="index.html#contact" class="nav-link">Contact</a></li>
+<li><a href="about.html#Reviews" class="nav-link">Reviews</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- About Section -->
+<main>
+<section id="about" class="section about">
+<h2>About Phoebe Design Studios</h2>
+<p>Hello! I'm Phoebe, a passionate graphic design student specializing in brand identity, logo design, and poster design. My goal is to create visually stunning designs for your business and involve you in the creative process.</p>
+<p>Though I'm a student, my clients have loved the outcomes of my designs. My creative process is rooted in innovation, attention to detail, and understanding your brand's unique needs.</p>
+</section>
+
+<!-- Reviews Section -->
+<section id="Reviews" class="Reviews section">
+    <h2>Leave a Review :)</h2>
+    <form id="review-form" class="review-form">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <textarea id="review" name="review" rows="6" cols="50" placeholder="Write your review here..." required></textarea>
+      <button type="submit" class="cta-button">Submit Review</button>
+    </form>
+  
+    <h2>Reviews</h2>
+    <div class="reviews-container"></div>
+  </section>
+
+<footer>
+<p>Follow me on Instagram @phoebe_designstudios</p>
+</footer>
+
+<!-- Load the Supabase library and then our custom scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script defer src="scripts.js" defer></script>
+</body>
+</html>
+
+

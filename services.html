@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Services | Phoebe Design Studios</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="logo2.png" type="image/png" />
+<link href="https://fonts.googleapis.com/css2?family=Alike&family=Montserrat&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.0.0/dist/umd/supabase.js"></script>
+</head>
+<body>
+
+<header>
+<div class="header-top">
+<img src="logo.png" alt="Logo" class="logo" />
+<h1 class="business-name">Phoebe Design Studios</h1>
+</div>
+<nav class="navigation">
+<ul>
+<li><a href="index.html" class="nav-link">Home</a></li>
+<li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+<li><a href="about.html" class="nav-link">About</a></li>
+<li><a href="services.html" class="nav-link">Services</a></li>
+<li><a href="index.html#contact" class="nav-link">Contact</a></li>
+<li><a href="services.html#Reviews" class="nav-link">Reviews</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<section class="section services">
+<h2>My Services</h2>
+<p class="services-intro">We offer a wide range of design services tailored to your brand's needs. Here’s what we can do for you:</p>
+<div class="services-container">
+<!-- Service Item 1 -->
+<div class="service-item">
+<img src="logo icon.png" alt="Logo Design" class="service-image" />
+<h3>Logo Design</h3>
+<p>Unique and memorable logos that reflect your brand's identity and values.</p>
+</div>
+<!-- Service Item 2 -->
+<div class="service-item">
+<div class="service-box">
+<img src="business-card-icon.png" alt="Business Card Design" class="service-image" />
+<h3>Business Card Design</h3>
+<p>Make a lasting first impression with custom business cards.</p>
+</div>
+</div>
+<!-- Service Item 3 -->
+<div class="service-item">
+<div class="service-box">
+<img src="poster-design.png" alt="Poster Design" class="service-image" />
+<h3>Poster Design</h3>
+<p>Bold posters that grab attention and communicate your message.</p>
+</div>
+</div>
+<!-- Service Item 4 -->
+<div class="service-item">
+<div class="service-box">
+<img src="t-shirt-icon.png" alt="T-shirt Design" class="service-image" />
+<h3>T-shirt Design</h3>
+<p>Whether it's for your brand, event, or personal style, each design is bold, creative, and made to stand out.</p>
+</div>
+</div>
+<!-- Service Item 5 -->
+<div class="service-item">
+<div class="service-box">
+<img src="album-cover.png" alt="Album Cover Design" class="service-image" />
+<h3>Album Cover</h3>
+<p>Visually tell your story with custom album artwork that captures the mood, message, and energy of your music.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Reviews Section -->
+<section id="Reviews" class="Reviews section">
+    <h2>Leave a Review :)</h2>
+    <form id="review-form" class="review-form">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <textarea id="review" name="review" rows="6" cols="50" placeholder="Write your review here..." required></textarea>
+      <button type="submit" class="cta-button">Submit Review</button>
+    </form>
+  
+    <h2>Reviews</h2>
+    <div class="reviews-container"></div>
+  </section>
+
+<footer>
+<p>Follow me on Instagram @phoebe_designstudios</p>
+</footer>
+
+<!-- Load the Supabase library and then our custom scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script defer src="scripts.js"></script>
+</body>
+</html>
+

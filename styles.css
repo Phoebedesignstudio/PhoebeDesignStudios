@@ -1,0 +1,453 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F5F1E1; /* Light beige background for a fresh look */
+    color: #29241E; /* Dark text for contrast and readability */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    }
+    
+    h1, h2, h3 {
+    font-family: 'Alike', serif; /* Serif font for headings */
+    margin: 0.5em 0;
+    }
+    
+    /* Header Styles */
+    .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    }
+    
+    .logo {
+    height: 200px; /* Adjusted logo size */
+    margin-right: 15px; /* Space between logo and business name */
+    }
+    
+    .business-name {
+    font-size: 40px;
+    color: #9B6D48; /* Mocha accent color for the business name */
+    text-align: center; /* Center the business name */
+    }
+    
+    /* Navigation Styles */
+    .navigation {
+    background-color: #EDCAAD; /* Soft pink background for navigation */
+    text-align: center;
+    }
+    
+    .navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    }
+    
+    .nav-link {
+    text-decoration: none;
+    color: #29241E;
+    font-size: 1.1rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+    }
+    
+    .nav-link:hover {
+    color: #FFF; /* White color on hover for contrast */
+    }
+    
+    /* Section Styles */
+    .section {
+    padding: 40px 20px; /* Adds padding to sections */
+    text-align: center;
+    }
+    
+    /* Services Preview Styles */
+    .services-preview-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    }
+    
+    /* Service Item */
+    .service-item {
+    background-color: #9B6D48; /* Mocha color for the service item */
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    }
+    
+    .service-item h3 {
+    font-size: 1.2rem;
+    color: #FFF;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+    background-color: #29241E; /* Dark background for emphasis */
+    color: #EDCAAD;
+    padding: 40px 20px;
+    text-align: center;
+    }
+    
+    .cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    }
+    
+    .cta-section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    }
+    
+    .cta-button {
+    background-color: #EDCAAD; /* Soft pink button */
+    color: #29241E;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+    }
+    
+    .cta-button:hover {
+    background-color: #9B6D48; /* Mocha color for hover */
+    color: #FFF;
+    }
+    
+    /* Footer Styles */
+    footer {
+    background-color: #29241E;
+    color: #EDCAAD;
+    padding: 20px;
+    text-align: center;
+    }
+    
+    /* Portfolio Section Styles */
+    .portfolio-intro {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #29241E;
+    }
+    
+    .portfolio h2 {
+    font-size: 2.2rem;
+    }
+    
+    /* Reviews Section */
+    .testimonial {
+    background-color: #EDCAAD;
+    color: #29241E;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    }
+    
+    .testimonial strong {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    }
+    
+    .testimonial em {
+    font-size: 0.9rem;
+    color: #555;
+    }
+    
+    .testimonial p {
+    font-size: 1rem;
+    line-height: 1.5;
+    }
+    
+    /* Form Styles */
+    form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    }
+    
+    .form-group {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    input[type="text"],
+    textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 5px; /* Ensures space between the label and input */
+    }
+    
+    textarea {
+    height: 150px;
+    resize: vertical; /* Lets users resize vertically */
+    }
+    
+    .submit-btn {
+    width: auto;
+    padding: 8px 15px; /* Smaller padding for the button */
+    font-size: 1rem;
+    background-color: #EDCAAD;
+    color: #29241E;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+    
+    .submit-btn:hover {
+    background-color: #D1B28C; /* Slightly darker shade for hover */
+    }
+    
+    .submit-btn:focus {
+    outline: none; /* Removes the focus outline */
+    }
+    
+    /* Reviews Display Section */
+    .reviews-display {
+    background-color: #F5F1E1; /* Light beige background for consistency */
+    padding: 40px 20px;
+    text-align: center;
+    }
+    
+    .reviews-display h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Alike', serif;
+    color: #29241E;
+    }
+    
+    .reviews-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    }
+    
+    .review-item {
+        background-color: #EDCAAD; /* Light pink background */
+        color: #29241E; /* Dark text color */
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        text-align: center;
+        }
+        
+        .review-item strong {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        }
+        
+        .review-item em {
+        font-size: 0.9rem;
+        color: #555;
+        }
+        
+        .review-item p {
+        font-size: 1rem;
+        line-height: 1.5;
+        }
+    
+    /* Mobile Fixes for Reviews Display */
+    @media (max-width: 768px) {
+    .reviews-container {
+    gap: 15px;
+    width: 100%;
+    }
+    
+    .review-item {
+    width: 95%; /* Make review items wider on small screens */
+    }
+    }
+    
+    /* Services Section Styles */
+    .services-intro {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #29241E;
+    text-align: center;
+    }
+    
+    .services h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    }
+    
+    .services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    }
+    
+    .service-box img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    }
+    
+    /* Service Item (Pink Box) Styling */
+    .service-item {
+    background-color: #EDCAAD; /* Pink background for each service box */
+    color: #29241E;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    text-align: center;
+    width: 280px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+    }
+    
+    /* Image inside Service Item */
+    .service-item img {
+    width: 100%;
+    height: 180px; /* Adjust the height to suit your image */
+    object-fit: cover;
+    border-radius: 8px; /* Rounded corners for the image */
+    margin-bottom: 15px;
+    }
+    
+    /* Service Item Title & Text */
+    .service-item h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #29241E;
+    }
+    
+    .service-item p {
+    font-size: 1rem;
+    color: #29241E;
+    }
+    
+    /* Portfolio Flip Cards */
+    .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    }
+    
+    .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 375px;
+    perspective: 1000px; /* Depth for flip effect */
+    }
+    
+    .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s; /* Smooth flip transition */
+    transform-style: preserve-3d;
+    }
+    
+    .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); /* Flip effect on hover */
+    }
+    
+    .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hides the back face when flipped */
+    border-radius: 8px;
+    overflow: hidden;
+    }
+    
+    /* Front of Flip Card */
+    .flip-card-front {
+    background-color: #EDCAAD;
+    color: #29241E;
+    }
+    
+    .flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    
+    /* Back of Flip Card */
+    .flip-card-back {
+    background-color: #29241E;
+    color: #EDCAAD;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    }
+    
+    /* About Page Styles */
+    .about {
+    background-color: #F5F1E1; /* Light beige for consistency */
+    color: #29241E;
+    padding: 60px 20px;
+    text-align: center;
+    }
+    
+    .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-family: 'Alike', serif; /* Serif font for About heading */
+    }
+    
+    .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    }
+    
+    .about-text {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+    }
+    
+    .about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    }
+    
+    /* Mobile Fixes for Smaller Screens */
+    @media (max-width: 768px) {
+    .header-top {
+    flex-direction: column; /* Stack logo and business name vertically */
+    }
+    
+    .navigation ul {
+    flex-direction: column; /* Stack navigation links vertically */
+    gap: 10px;
+    }
+    
+    .logo {
+    margin-bottom: 10px; /* Space below logo when stacked */
+    }
+    
+    .services-container {
+    flex-direction: column; /* Stack services vertically on small screens */
+    align-items: center; /* Center align service boxes */
+    }
+    
+    .service-item {
+    width: 90%; /* Make service boxes wider on small screens */
+    }
+    }
+    

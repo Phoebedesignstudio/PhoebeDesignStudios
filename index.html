@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Phoebe Design Studios</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="logo2.png" type="image/png" />
+<link href="https://fonts.googleapis.com/css2?family=Alike&family=Montserrat&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.0.0/dist/umd/supabase.js"></script>
+</head>
+<body>
+
+<header>
+<div class="header-top">
+<img src="logo.png" alt="Logo" class="logo" />
+<h1 class="business-name">Phoebe Design Studios</h1>
+</div>
+<nav class="navigation">
+<ul>
+<li><a href="index.html" class="nav-link">Home</a></li>
+<li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+<li><a href="about.html" class="nav-link">About</a></li>
+<li><a href="services.html" class="nav-link">Services</a></li>
+<li><a href="#contact" class="nav-link">Contact</a></li>
+<li><a href="index.html#Reviews" class="nav-link">Reviews</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<!-- Slogan Section -->
+<section class="section home">
+<h2>YOUR VISION, PERFECTED TOGETHER</h2>
+<p>Unique, custom designs tailored to your brand’s needs</p>
+</section>
+
+<!-- Services Preview Section -->
+<section id="services-preview" class="section services-preview">
+<h2>What I Do</h2>
+<p>From logos to posters, I offer a wide range of design services. Here are some of the things I can help you with:</p>
+<div class="services-preview-container">
+<div class="service-item">
+<h3>Logo Design</h3>
+<p>Creating memorable and impactful logos for your brand.</p>
+</div>
+<div class="service-item">
+<h3>Poster Design</h3>
+<p>Designing striking posters that communicate your message effectively.</p>
+</div>
+</div>
+</section>
+
+<!-- Call-to-Action Section -->
+<section id="cta" class="cta-section">
+<h2>Ready to start your project?</h2>
+<p>Let’s bring your ideas to life with beautiful design.</p>
+<a href="#contact" class="cta-button">Contact Me</a>
+</section>
+
+<!-- Reviews Section -->
+<section id="Reviews" class="Reviews section">
+    <h2>Leave a Review :)</h2>
+    <form id="review-form" class="review-form">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <textarea id="review" name="review" rows="6" cols="50" placeholder="Write your review here..." required></textarea>
+      <button type="submit" class="cta-button">Submit Review</button>
+    </form>
+  
+    <h2>Reviews</h2>
+    <div class="reviews-container"></div>
+  </section>
+
+<!-- Contact Section -->
+<section id="contact" class="section contact">
+<h2>Contact</h2>
+<p>Reach out at <a href="mailto:phoebdesignstudios@gmail.com">phoebdesignstudios@gmail.com</a></p>
+</section>
+</main>
+
+<footer>
+<p>Follow me on Instagram @phoebe_designstudios</p>
+</footer>
+
+<!-- Load the Supabase library and then our custom scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script defer src="scripts.js" defer></script>
+</body>
+</html>
+
+
